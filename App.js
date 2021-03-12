@@ -20,9 +20,9 @@ export default function App() {
         var contato = {nome: nome, telefone: telefone};
         setContatos(contatos => {
             setContadorContatos(contadorContatos + 2);
-            console.log(contatos);
             return [{key: contadorContatos.toString(), value: contato},...contatos];
         });
+        console.log(contato);
     }
 
     return(
